@@ -28,32 +28,32 @@ This project implements a digital stopwatch using Verilog HDL. It supports start
 * Active-low asynchronous reset initializes the system.
 
 # 📁 File Structure
-📦 Digital-Stopwatch-Verilog
- ┣ 📜 stopwatch.v     # RTL design
- ┣ 📜 DCS_tb.v        # Testbench
- ┗ 📜 README.md       # Project documentation
+* 📦 Digital-Stopwatch-Verilog
+* ┣ 📜 stopwatch.v     # RTL design
+* ┣ 📜 DCS_tb.v        # Testbench
+* ┗ 📜 README.md       # Project documentation
 
 # ▶️ Simulation Instructions (ModelSim)
-vlib work
-vmap work work
-vlog stopwatch.v
-vlog DCS_tb.v
-vsim DCS_tb
-run -all
+* vlib work
+* vmap work work
+* vlog stopwatch.v
+* vlog DCS_tb.v
+* vsim DCS_tb
+* run -all
 
 # 📊 Observed Signals
 
-clk – system clock
+* clk – system clock
 
-rst_n – active-low reset
+* rst_n – active-low reset
 
-start_stop – control input
+* start_stop – control input
 
-running – stopwatch state
+* running – stopwatch state
 
-tick_1hz – one-second pulse
+* tick_1hz – one-second pulse
 
-seconds[6:0] – elapsed seconds
+* seconds[6:0] – elapsed seconds
 
 # 🛠️ Tools Used
 
